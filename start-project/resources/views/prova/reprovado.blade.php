@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aprovados</title>
+    <title>Provas</title>
 </head>
 <body>
-    <h1 style="color: rgb(51, 255, 0)">Aprovados</h1>
+    <h1 style= "color: blue">Lista de aprovados</h1>
     <hr>
-    
-    <a href="{{route('prova')}}">Voltar</a>
-    
-   
+    <a href="{{route('prova')}}">voltar</a>
 </body>
 </html>

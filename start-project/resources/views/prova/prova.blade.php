@@ -7,8 +7,12 @@
     <title>Provas</title>
 </head>
 <body>
-    <h1 style= "color: blue">Lista de recuperação</h1>
+    <h1 style= "color: blue">Lista de aprovados</h1>
     <hr>
-    <a href="{{route('prova')}}">voltar</a>
+    <a href="{{route('prova.aprovado')}}">aprovado</a>
+    <br>
+    <a href="{{route('prova.reprovado')}}">reprovado</a>
+    <br>
+    <a href="{{route('prova.recuperacao')}}">recuperação</a>
 </body>
 </html>
