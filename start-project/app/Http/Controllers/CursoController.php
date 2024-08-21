@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Eixo;
 
 use Illuminate\Http\Request;
+use App\Models\Curso;
 
-class EixoController extends Controller
+class CursoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,8 @@ class EixoController extends Controller
      */
     public function index()
     {
-        $data = Eixo::with('curso')->get();
-        return view('eixo.index', compact(['data']));
-        
+        $data = Curso::all();
+        return view('curso.index', compact(['data']));
     }
 
     /**
@@ -26,7 +25,7 @@ class EixoController extends Controller
      */
     public function create()
     {
-        return view('eixo.create');
+        //
     }
 
     /**
@@ -37,12 +36,7 @@ class EixoController extends Controller
      */
     public function store(Request $request)
     {
-        $eixo = new Eixo();
-        $eixo->name = $request->name;
-        $eixo->description = $request->description;
-        $eixo->save();
-
-        return redirect()->route('eixo.index');
+        //
     }
 
     /**
@@ -53,12 +47,7 @@ class EixoController extends Controller
      */
     public function show($id)
     {
-        $eixo= Eixo::find($id);
-
-        if(isset($eixo)){
-            return view('eixo.show',compact('eixo'));
-        }
-        return "ERROR";
+        //
     }
 
     /**
@@ -69,13 +58,8 @@ class EixoController extends Controller
      */
     public function edit($id)
     {
-        $eixo= Eixo::find($id);
-
-        if(isset($eixo)){
-            return view('eixo.edit',compact('eixo'));
+        //
     }
-    return "ERROR";
-}
 
     /**
      * Update the specified resource in storage.
@@ -86,18 +70,7 @@ class EixoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $eixo= Eixo::find($id);
-
-        if(isset($eixo)){
-            $eixo->name = $request->name;
-        $eixo->description = $request->description;
-        $eixo->save();
-        return redirect()->route('eixo.index');
-        }
-        $eixo->name = $request->name;
-        $eixo->description = $request->description;
-        $eixo->save();
-        return redirect()->route('eixo.index');
+        //
     }
 
     /**
@@ -108,11 +81,6 @@ class EixoController extends Controller
      */
     public function destroy($id)
     {
-        $eixo= Eixo::find($id);
-        if(isset($eixo)){
-            $eixo->delete();
-            return redirect()->route('eixo.index');
-        }
-        return "ERROR";
+        //
     }
 }
