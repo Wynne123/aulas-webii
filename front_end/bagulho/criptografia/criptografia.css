@@ -1,0 +1,29 @@
+body{
+
+    
+    
+    background-image : url('mm.gif');
+    }
+    .container { text-align: center; }
+   
+
+   textarea{
+    font-style: arial;
+
+ color: green;
+ font-weight: 900;
+
+
+
+
+ background-image : url('Anonymous_emblem.svg.png');
+ background-size: 388px 310px;opacity: 0.9;
+    
+
+
+   }
+    .radio{
+        color: white;
+       
+        font-size: xx-large;
+    }
