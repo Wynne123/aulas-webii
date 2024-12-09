@@ -124,12 +124,7 @@ nav ul li a:hover {
 }
 
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
+
 
 
 
@@ -519,7 +514,7 @@ footer {
 .sidebar {
   position: fixed;
   background-color: rgb(187, 166, 149);
-  height: 100vh;
+  height: 50vh;
   width: 250px;
   left: -250px;
   top: 0;
