@@ -6,8 +6,10 @@
 }
 
 #cabecalho{
-    height: 180px;
-    background-color: rgb(250, 203, 211);
+    background-color: rgba(233, 150, 122, 0.774);
+    color: white;
+    
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +20,7 @@
 }
 #menu{
     height: 75px;
-    background-color: rgb(169, 250, 223);
+    background-color: rgba(233, 150, 122, 0.774);
     display: flex;
     justify-content: space-around;
     align-items: center;
